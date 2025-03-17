@@ -4,7 +4,11 @@ import React from 'react'
 import { HiMiniBars3BottomLeft } from 'react-icons/hi2'
 import { TbAirBalloon } from 'react-icons/tb'
 
-const Navbar = () => {
+type Props={
+    openNav:()=>void
+}
+
+const Navbar = ({openNav}:Props) => {
   return (
     <div className='bg-blue-950 transition-all duration-200 h-[12vh] z-[1000] fixed w-full'>
         <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
@@ -13,7 +17,7 @@ const Navbar = () => {
                 justify-center flex-col'>
                     <TbAirBalloon  className='w-6 h-6 text-white'/>
                 </div>
-                <h1 className='text-xl md:text-2xl text-white uppercase font-bold'>Tripi</h1>
+                <h1 className='text-xl md:text-2xl text-white uppercase font-bold'>Travel</h1>
             </div>
             <div className='hidden lg:flex items-center space-x-10'>
                 {navLinks.map((link)=>{
@@ -29,7 +33,7 @@ const Navbar = () => {
                  text-base  bg-white hover:bg-gray-200
                   transition-all duration-200 rounded-lg'>Book Now</button>
 
-                  <HiMiniBars3BottomLeft className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+                  <HiMiniBars3BottomLeft onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
             </div>
         </div>
     </div>
