@@ -33,15 +33,14 @@ const DestinationSlider = () => {
         return <div key={data.id} className='m-3'>
             <div className='relative h-[400px]'>
                 {/* overlay */}
-                <div className='absolute inset-0 bg-black opacity-70
-                 rounded-lg'>
+                <div className='absolute inset-0 bg-black opacity-25
+                  rounded-lg'></div>
                     <Image src={data.image} alt={data.country} width={500}
                     height={500} className='h-full w-full object-cover rounded-lg' />
-                    {/* text content */}
-                    <h1 className='text-lg font-semibold mt-4'>{data.country}</h1>
-                    <p className='text-sm text-gray-600'>{data.travelers}</p>
-                 </div>
+                    {/* text content */}          
             </div>
+            <h1 className='text-lg  font-semibold mt-4'>{data.country}</h1>
+                    <p className='text-sm  text-gray-600'>{data.travelers} Travellers</p>
         </div>
       })}
       </Carousel>
