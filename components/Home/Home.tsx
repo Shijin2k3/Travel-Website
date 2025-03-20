@@ -6,6 +6,7 @@ import Services from './Services/Services'
 import Reviews from './Reviews/Reviews'
 import News from './News/News'
 import NewsLetter from './NewsLetter/NewsLetter'
+import Footer from './Footer/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Reviews />
       <News />
       <NewsLetter />
+      
       
     </div>
   )
