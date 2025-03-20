@@ -5,6 +5,7 @@ import Hotel from './Hotel/Hotel'
 import Services from './Services/Services'
 import Reviews from './Reviews/Reviews'
 import News from './News/News'
+import NewsLetter from './NewsLetter/NewsLetter'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Services />
       <Reviews />
       <News />
+      <NewsLetter />
       
     </div>
   )
