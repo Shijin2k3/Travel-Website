@@ -7,7 +7,7 @@ const NewsLetter = () => {
         <BsEnvelopePaper  className='w-16 h-16 mt-20 text-white'/>
         <h1 className='text-lg sm:text-xl md:text-2xl text-white font-semibold mt-10 tracking-widest'>Your Travel Journey Starts Here</h1>
         <p className='mt-3 text-white text-xs  sm:text-sm'>
-            Signup and we'll send best deals to you
+            Signup and we&aposll send best deals to you
         </p>
 
         <div className='w-full'>
