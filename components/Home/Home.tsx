@@ -24,7 +24,7 @@ const Home = () => {
     initAOS();
   },[])
   return (
-    <div className='overflow-hidden'>
+    <div id='home' className='overflow-hidden'>
       <Hero />
       <Destination />
       <Hotel />
