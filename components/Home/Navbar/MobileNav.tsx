@@ -18,8 +18,8 @@ const MobileNav = ({closeNav,showNav}:Props) => {
       h-full transform transition-all duration-500 delay-300 w-[80%]
        sm:w-[60%] bg-blue-950 space-y-6 z-[1050] `}>
         {navLinks.map((link)=>{
-          return <Link key={link.id} href={link.url}>
-            <p onClick={closeNav} className='text-white w-fit text-[20px] ml-12
+          return <Link onClick={closeNav} key={link.id} href={link.url}>
+            <p  className='text-white w-fit text-[20px] ml-12
              border-b-[1.5px] pb-1 border-white sm:text-[30px]
               '>{link.label}</p>
           </Link>
